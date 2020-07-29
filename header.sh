@@ -31,21 +31,21 @@ echo "";
 apt update -y &> /dev/null;
 apt install figlet pv ncurses-utils binutils coreutils wget git zsh termux-api procps gawk -y &> /dev/null;
 termux-wake-lock;
-if [ -e $PREFIX/share/figlet/DarkRevel.flf ]; then
-	echo -e "\e[1;34m[*] \033[32mDarkRevel.flf figlet font is present\033[0m";
+if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
+	echo -e "\e[1;34m[*] \033[32mRemo773.flf figlet font is present\033[0m";
 	sleep 4
 else
-wget https://raw.githubusercontent.com/darkrevel/master/DarkRevel.flf &> /dev/null;
+wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
 sleep 3
-cat DarkRevel.flf >> $PREFIX/share/figlet/DarkRevel.flf
+cat Remo773.flf >> $PREFIX/share/figlet/Remo773.flf
 sleep 3
-rm DarkRevel.fif
+rm Remo773.fif
 fi
 THEADER () 
 {
 clear;
 echo -e "\033[01;32m
-DarkRevel (2018)
+Remo773 (2018)
 		
 	menu
 +---------------------------*/
@@ -68,7 +68,7 @@ if [ ${#PROC} -gt 8 ]; then
 	sleep 4
 	clear
 echo -e "\033[01;32m
-DarkRevel (2018)
+Remo773 (2018)
 
 	menu
 +---------------------------*/
@@ -85,7 +85,7 @@ fi
 done
 clear
 TNAME="$PROC";
-echo -e "\033[32m$(figlet -f darkrevel.flf "$TNAME")\033[0m";
+echo -e "\033[32m$(figlet -f Remo773.flf "$TNAME")\033[0m";
 echo "";
 echo -e '\e[0;35m+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\e[00m';
 echo -e '\033[1;43;30m### SUBSCRIBE MY YOUTUBE CHANNEL ### \033[0m';
@@ -106,7 +106,7 @@ fi
 	cd $HOME/T-Header
 	fi
 	
-	wget https://raw.githubusercontent.com/darkrevel/master/t-head.txt &> /dev/null ;
+	wget https://raw.githubusercontent.com/remo7777/REMO773/master/t-head.txt &> /dev/null ;
 
 	sleep 3
 	sed -i '/^TNAME=/d' $HOME/.zshrc
@@ -116,23 +116,23 @@ fi
 	rm t-head.txt
 	rm $HOME/.oh-my-zsh/themes/xiong-chiamiov-plus.zsh-theme
 	if [ -e $PWD/.remo773.zsh-theme ]; then
-	sed -e "s/\DarkRevel/$PROC/g" .darkrevel.zsh-theme > $HOME/.oh-my-zsh/themes/xiong-chiamiov-plus.zsh-theme
+	sed -e "s/\Remo773/$PROC/g" .remo773.zsh-theme > $HOME/.oh-my-zsh/themes/xiong-chiamiov-plus.zsh-theme
 else
-wget https://raw.githubusercontent.com/remo7777/T-Header/master/.darkrevel.zsh-theme &> /dev/null
-sed -e "s/\darkrevel/$PROC/g" .darkrevel.zsh-theme > $HOME/.oh-my-zsh/themes/xiong-chiamiov-plus.zsh-theme
+wget https://raw.githubusercontent.com/remo7777/T-Header/master/.remo773.zsh-theme &> /dev/null
+sed -e "s/\Remo773/$PROC/g" .remo773.zsh-theme > $HOME/.oh-my-zsh/themes/xiong-chiamiov-plus.zsh-theme
 fi
 source ~/.zshrc
 else
-	echo -e "\033[32m.I am a Dark Revel Our Team name is black While cyber source.\033[0m"
+	echo -e "\033[32mHope you like my work..\033[0m"
 fi
 exit
 }
 
 clear;
-echo -e "\033[31m$(figlet -f Dark Revel "T- Header")\e[0m"
+echo -e "\033[31m$(figlet -f Remo773 "T- Header")\e[0m"
 echo -e "\e[1;32m
 +----------------------------------*/
-BlackWhile : (\e[33m12.7.2018\e[32m)
+Remo773 : (\e[33m12.7.2018\e[32m)
 
 1. Oh-my-zsh
 2. Zsh-syntax-highlight (\e[33mplugins\e[01;32m)
